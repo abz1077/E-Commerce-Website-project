@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>theuworld</title>
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+	<meta charset="utf-8">
+
+   
+
+
+    
+</head>
+<body>
+	<div id="wrapper">
+	<div id="header">
+		<div id="subheader">
+			<div class="container">
+				<p>World's fastest online shopping place</p>
+			<a href="#">Guest</a><a href="#">Consumer</a><a href="#">Download App</a><a href="#">Help</a>
+			</div>
+		</div>
+		<div id="main-header">
+		<div id="logo">
+			<span id="ist">The</span><span id="iist">UWorld.com</span>
+		</div>
+		<div id="search">
+		<form action="">
+			<input class="search-area" type="text" placeholder="Search here">
+			<input class="search-btn" type="submit" value="SEARCH">
+
+		</form>
+
+	</div>
+		<div id="user-menu">
+			<li><a href="#">Cart</a></li>
+			<li><a href="#">Login</a></li>
+		</div>
+	</div>
+	</div>
+		<div id="navigation">
+		<nav>
+			<a href="#">Home</a>
+			<a href="#">New arrivals</a>
+			<a href="#">Deals</a>
+			<a href="#">Electronics</a>
+			<a href="#">Accessories</a>
+			<a href="#">Products</a>
+			<a href="#">Order</a>
+		</nav>
+	</div>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  
+  <img src="images/img1.png" style="width:100%;height:100%;margin-top:20px">
+  </div>
+
+<div class="mySlides fade">
+  
+  <img src="images/img2.png" style="width:100%;height:100%;margin-top: 20px">
+ </div>
+
+<div class="mySlides fade">
+  
+  <img src="images/img3.png" style="width:100%;height:100%;margin-top: 20px">
+  </div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<div class="container">
+<div id="heading-block">
+	<h2>Category</h2>
+</div>
+<a href="#">
+<div class="catbox">
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTO-jA_AJ-aGGU4hTNM7aAkMw6z2HuyIx_LgQ&usqp=CAU" alt="Men-Fashion">
+	<span>
+	Men Fashion
+	
+	</span>
+
+</div>
+</a>
+<a href="#">
+<div class="catbox">
+	<img src="https://m.media-amazon.com/images/I/617h9h1gbZL._AC_UL480_FMwebp_QL65_.jpg" alt="Women-Fashion">
+	<span>Women Fashion</span>
+	</div>
+</div>
+</a>
+<a href="#">
+<div class="catbox">
+	<img src="https://m.media-amazon.com/images/I/71fZ4nCbKvL._AC_UL480_FMwebp_QL65_.jpg" alt="Handbags-Women">
+	<span>Handbags-Ladies</span>
+</div>
+</a>
+<a href="#">
+<div class="catbox">
+	<img src="https://m.media-amazon.com/images/I/51wpu-iyHQL._AC_UL480_FMwebp_QL65_.jpg" alt="Men-Fashion">
+	<span>Men Shirt</span>
+</div>
+</a>
+<a href="#">
+<div class="catbox">
+	<img src="https://m.media-amazon.com/images/I/71ehArDpUmL._AC_UL480_FMwebp_QL65_.jpg" alt="Kids-Fashion">
+	<span>Kids T-Shirts</span>
+</div>
+</a>
+<a href="#">
+<div class="catbox">
+	<img src="https://m.media-amazon.com/images/I/81SKDJ6YI2L._AC_UL480_FMwebp_QL65_.jpg" alt="Men-Fashion">
+	<span>Men's Loafer Shoes</span>
+</div>
+</a>
+</div>
+<div id="heading-block">
+	<h2>Products</h2>
+</div>
+<div class="prod-container">
+	<div class="prod-box">
+		<img src="https://m.media-amazon.com/images/I/61aPdA25qWL._AC_UL480_FMwebp_QL65_.jpg" alt="man suit">
+		<div class="prod-trans">
+			<div class="prod-feature">
+				<p>Man special suit</p>
+				<p style="color:#fff;font-weight:bold;">Price: $100</p>
+				<input type="button" value="Add to Cart">
+			</div>
+		</div>
+	</div>
+	<div class="prod-box">
+		<img src="https://m.media-amazon.com/images/G/31/img19/Fashion/DesktopSubnav/Updated/BP.jpg" alt="Bag">
+		<div class="prod-trans">
+			<div class="prod-feature">
+				<p>School Bag</p>
+				<p style="color:#fff;font-weight:bold;">Price: $55</p>
+				<input type="button" value="Add to Cart">
+			</div>
+		</div>
+	</div>
+	<div class="prod-box">
+		<img src="https://images-eu.ssl-images-amazon.com/images/I/41+xWzgV8jL._AC_US240_FMwebp_QL65_.jpg" alt="Mobile Phone">
+		<div class="prod-trans">
+			<div class="prod-feature">
+				<p>Samsung Mobile Phone</p>
+				<p style="color:#fff;font-weight:bold;">Price: $500</p>
+				<input type="button" value="Add to Cart">
+			</div>
+		</div>
+	</div>
+	<div class="prod-box">
+		<img src="https://images-eu.ssl-images-amazon.com/images/I/41h58enMghL._AC_US327_FMwebp_QL65_.jpg" alt="Laptop">
+		<div class="prod-trans">
+			<div class="prod-feature">
+				<p>Asus Laptop</p>
+				<p style="color:#fff;font-weight:bold;">Price: $1200</p>
+				<input type="button" value="Add to Cart">
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="footer">
+	<div class="container">
+		<div class="footer_sub">
+			<h2>About Us</h2>
+			<p>this is my e-commerce website designed in html and css. here you will get all products whch you want 
+				in daily life. get all the products for you at low prizes in comparison to market rate and other websites too.
+				<span><a href="#">Read more..</a></span>
+				</p>
+				
+
+		</div>
+		<div class="footer_sub_2">
+		<center>
+			<h2>Important Links</h2>
+			
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">New arrivals</a></li>
+				<li><a href="#">Deals</a></li>
+				<li><a href="#">Electronics</a></li>
+				<li><a href="#">Accessories</a></li>
+				<li><a href="#">Products</a></li>
+				<li><a href="#">Order</a></li>
+			</ul>
+			</center>
+		</div>
+
+		
+
+		<div class="footer_sub_2">
+			<center>
+			<h2>Social Links</h2>
+			
+			<ul>
+				<li><a href="#">Instagram</a></li>
+				<li><a href="#">Twitter</a></li>
+				<li><a href="#">Facebook</a></li>
+				<li><a href="#">Linkedin</a></li>
+				<li><a href="#">Email:-bhavyatyagi79@gmail.com</a></li>
+				<li><a href="#">Youtube</a></li>
+				<li><a href="#">Pinterest</a></li>
+			</ul>
+			</center>
+		</div>
+
+		<div class="footer_sub_3">
+		<center>
+			<h2>Subscribe Us</h2>
+			<input type="text" name="subs" placeholder="Write your e-mail" class="subs">
+			<input type="submit" name="submit_btn" value="Subscribe" class="sub_btn">
+			<p class="sub_p">Enter your e-mail id for getting notifications by us.</p>
+		</center>
+		
+	
+			<div class = "container-fluid">
+				<h2>Contact Us</h2>
+	<div class ="row">
+		<div class = "col-md-6">
+			<label for="email">E-mail:</label>
+			<input type="email" class="form-control"  placeholder="Enter E-mail" name="email">
+		</div>
+		<div class = "col-md-6">
+			<label for="name">Name:</label>
+			<input type="name" class="form-control"  placeholder="Enter Name" name="name">
+		</div>
+	</div>
+		<div class = "col-md-6">
+			<label for="Mobile no.">Mobile Number:</label>
+			<input type="Number" class="form-control"  placeholder="Enter Mobile No." name="Mobile No.">
+		</div>
+    </div>
+    <div class ="row">
+		<div class = "col-md-12">
+			<label for="Address">Address:</label>
+			<Textarea type="Address" class="form-control"  placeholder="Enter Address" name="address"></Textarea>
+		</div>
+    </div>
+    <div class ="row">
+    	<div class = "col-md-4">
+    		<label for = "Gender">Gender:</label>
+    		<Textarea type="Gender" class="form-control"></Textarea>
+    		<select>
+    			<option value="Male">Male</option>
+    			<option value="Female">Female</option>
+    		</select>
+    	</div>
+    </div>
+    <input type="submit" name="submit_btn" value="Submit" class="sub_btn_1">
+</div>
+</div>
+</div>
+
+    	
+    
+</body>
+</html>
+
+
+
+
+
+
